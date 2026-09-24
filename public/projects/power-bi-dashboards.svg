@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pbiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="yellowBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="purpleBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#6d28d9" />
+    </linearGradient>
+    <linearGradient id="cyanBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#0891b2" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#pbiBg)" />
+
+  <!-- Power BI Canvas Container -->
+  <rect x="30" y="25" width="740" height="450" rx="10" fill="#0f172a" stroke="rgba(245, 158, 11, 0.25)" stroke-width="1" filter="drop-shadow(0 20px 45px rgba(0,0,0,0.7))" />
+
+  <!-- Header / Power BI ribbon mock -->
+  <rect x="30" y="25" width="740" height="46" rx="10" fill="#1e293b" />
+  <circle cx="55" cy="48" r="7" fill="#f59e0b" />
+  <text x="70" y="52" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Power BI</text>
+  <text x="140" y="52" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Executive Analytics | Multi-Domain Sales & Profitability</text>
+  
+  <!-- Slicers Strip -->
+  <g transform="translate(48, 85)">
+    <!-- Slicer 1 -->
+    <rect x="0" y="0" width="130" height="32" rx="6" fill="#131d38" stroke="rgba(255,255,255,0.1)" />
+    <text x="12" y="20" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="11" font-weight="600">🍕 Pizza Sales</text>
+
+    <!-- Slicer 2 -->
+    <rect x="142" y="0" width="140" height="32" rx="6" fill="#131d38" stroke="rgba(255,255,255,0.06)" />
+    <text x="154" y="20" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">🍫 Chocolate Sales</text>
+
+    <!-- Slicer 3 -->
+    <rect x="294" y="0" width="130" height="32" rx="6" fill="#131d38" stroke="rgba(255,255,255,0.06)" />
+    <text x="306" y="20" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">💻 SaaS Performance</text>
+
+    <!-- Date Slicer -->
+    <rect x="520" y="0" width="180" height="32" rx="6" fill="#131d38" stroke="rgba(255,255,255,0.06)" />
+    <text x="532" y="20" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Period: FY 2024–2025 ▼</text>
+  </g>
+
+  <!-- KPI Cards -->
+  <g transform="translate(48, 130)">
+    <!-- KPI 1 -->
+    <rect x="0" y="0" width="160" height="70" rx="8" fill="#131d38" stroke="rgba(245, 158, 11, 0.2)" />
+    <text x="14" y="22" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">TOTAL REVENUE (DAX)</text>
+    <text x="14" y="48" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="19" font-weight="700">$817,860</text>
+    <text x="14" y="62" fill="#22c55e" font-family="system-ui, sans-serif" font-size="9">▲ 14.8% YoY Growth</text>
+
+    <!-- KPI 2 -->
+    <rect x="175" y="0" width="160" height="70" rx="8" fill="#131d38" stroke="rgba(139, 92, 246, 0.2)" />
+    <text x="189" y="22" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">TOTAL ORDERS</text>
+    <text x="189" y="48" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="19" font-weight="700">21,350</text>
+    <text x="189" y="62" fill="#8b5cf6" font-family="system-ui, sans-serif" font-size="9">Avg Order: $38.30</text>
+
+    <!-- KPI 3 -->
+    <rect x="350" y="0" width="160" height="70" rx="8" fill="#131d38" stroke="rgba(6, 182, 212, 0.2)" />
+    <text x="364" y="22" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">NET PROFIT MARGIN</text>
+    <text x="364" y="48" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="19" font-weight="700">32.4%</text>
+    <text x="364" y="62" fill="#06b6d4" font-family="system-ui, sans-serif" font-size="9">+4.2% Optimization</text>
+
+    <!-- KPI 4 -->
+    <rect x="525" y="0" width="175" height="70" rx="8" fill="#131d38" stroke="rgba(255,255,255,0.06)" />
+    <text x="539" y="22" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">TOP CATEGORY</text>
+    <text x="539" y="48" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="19" font-weight="700">Classic Gourmet</text>
+    <text x="539" y="62" fill="#eab308" font-family="system-ui, sans-serif" font-size="9">42% of volume</text>
+  </g>
+
+  <!-- Bar Chart Widget -->
+  <rect x="48" y="215" width="410" height="235" rx="8" fill="#131d38" stroke="rgba(255,255,255,0.06)" />
+  <text x="66" y="240" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Monthly Revenue vs Target (DAX Measures)</text>
+  
+  <!-- Bars -->
+  <g transform="translate(66, 260)">
+    <!-- Jan -->
+    <rect x="10" y="80" width="20" height="85" rx="3" fill="url(#yellowBar)" />
+    <text x="12" y="180" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">Jan</text>
+
+    <!-- Feb -->
+    <rect x="40" y="60" width="20" height="105" rx="3" fill="url(#yellowBar)" />
+    <text x="42" y="180" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">Feb</text>
+
+    <!-- Mar -->
+    <rect x="70" y="45" width="20" height="120" rx="3" fill="url(#yellowBar)" />
+    <text x="72" y="180" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">Mar</text>
+
+    <!-- Apr -->
+    <rect x="100" y="55" width="20" height="110" rx="3" fill="url(#yellowBar)" />
+    <text x="102" y="180" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">Apr</text>
+
+    <!-- May -->
+    <rect x="130" y="30" width="20" height="135" rx="3" fill="url(#yellowBar)" />
+    <text x="132" y="180" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">May</text>
+
+    <!-- Jun -->
+    <rect x="160" y="20" width="20" height="145" rx="3" fill="url(#yellowBar)" />
+    <text x="162" y="180" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">Jun</text>
+
+    <!-- Jul -->
+    <rect x="190" y="10" width="20" height="155" rx="3" fill="url(#purpleBar)" />
+    <text x="192" y="180" fill="#8b5cf6" font-family="system-ui, sans-serif" font-size="9">Jul*</text>
+
+    <!-- Aug -->
+    <rect x="220" y="25" width="20" height="140" rx="3" fill="url(#yellowBar)" />
+    <text x="222" y="180" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">Aug</text>
+
+    <!-- Sep -->
+    <rect x="250" y="15" width="20" height="150" rx="3" fill="url(#yellowBar)" />
+    <text x="252" y="180" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">Sep</text>
+
+    <!-- Oct -->
+    <rect x="280" y="5" width="20" height="160" rx="3" fill="url(#purpleBar)" />
+    <text x="282" y="180" fill="#8b5cf6" font-family="system-ui, sans-serif" font-size="9">Oct*</text>
+
+    <!-- Nov -->
+    <rect x="310" y="12" width="20" height="153" rx="3" fill="url(#yellowBar)" />
+    <text x="312" y="180" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">Nov</text>
+
+    <!-- Dec -->
+    <rect x="340" y="0" width="20" height="165" rx="3" fill="url(#yellowBar)" />
+    <text x="342" y="180" fill="#64748b" font-family="system-ui, sans-serif" font-size="9">Dec</text>
+  </g>
+
+  <!-- Donut Chart & Category Breakdown -->
+  <rect x="472" y="215" width="276" height="235" rx="8" fill="#131d38" stroke="rgba(255,255,255,0.06)" />
+  <text x="490" y="240" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Product Share Slicer</text>
+  
+  <circle cx="610" cy="315" r="50" fill="none" stroke="#1e293b" stroke-width="16" />
+  <circle cx="610" cy="315" r="50" fill="none" stroke="#f59e0b" stroke-width="16" stroke-dasharray="160 314" />
+  <circle cx="610" cy="315" r="50" fill="none" stroke="#8b5cf6" stroke-width="16" stroke-dasharray="85 314" stroke-dashoffset="-160" />
+  <circle cx="610" cy="315" r="50" fill="none" stroke="#06b6d4" stroke-width="16" stroke-dasharray="69 314" stroke-dashoffset="-245" />
+
+  <text x="590" y="320" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">100%</text>
+
+  <!-- Legend -->
+  <g transform="translate(490, 395)">
+    <circle cx="10" cy="6" r="4" fill="#f59e0b" />
+    <text x="20" y="10" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Pizza (51%)</text>
+
+    <circle cx="100" cy="6" r="4" fill="#8b5cf6" />
+    <text x="110" y="10" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Chocolate (27%)</text>
+
+    <circle cx="190" cy="6" r="4" fill="#06b6d4" />
+    <text x="200" y="10" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">SaaS (22%)</text>
+  </g>
+</svg>

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nikeDarkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="neonOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff5722" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="violetGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#nikeDarkBg)" />
+
+  <!-- Container -->
+  <rect x="35" y="25" width="730" height="450" rx="10" fill="#0f172a" stroke="rgba(255,87,34,0.3)" stroke-width="1" filter="drop-shadow(0 20px 45px rgba(0,0,0,0.7))" />
+
+  <!-- Nike Brand Header -->
+  <rect x="35" y="25" width="730" height="52" rx="10" fill="#131d36" />
+  
+  <!-- Swoosh stylized shape -->
+  <path d="M 60 55 Q 75 42, 95 38 Q 80 50, 70 54 Q 63 56, 60 55 Z" fill="#ff5722" />
+  
+  <text x="110" y="56" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="800" letter-spacing="1">NIKE GLOBAL SALES &amp; OPERATING PROFIT</text>
+  <text x="590" y="56" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Excel + Power BI Model</text>
+
+  <!-- KPI Row -->
+  <g transform="translate(55, 95)">
+    <!-- KPI 1 -->
+    <rect x="0" y="0" width="150" height="75" rx="8" fill="#131d38" stroke="rgba(255,87,34,0.25)" />
+    <text x="14" y="22" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">OPERATING PROFIT</text>
+    <text x="14" y="48" fill="#ffffff" font-family="system-ui, sans-serif" font-size="19" font-weight="800">$1.42B</text>
+    <text x="14" y="64" fill="#ff5722" font-family="system-ui, sans-serif" font-size="9">▲ 11.4% Target Margin</text>
+
+    <!-- KPI 2 -->
+    <rect x="165" y="0" width="150" height="75" rx="8" fill="#131d38" stroke="rgba(255,255,255,0.08)" />
+    <text x="179" y="22" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">UNITS SOLD</text>
+    <text x="179" y="48" fill="#ffffff" font-family="system-ui, sans-serif" font-size="19" font-weight="800">4,820,910</text>
+    <text x="179" y="64" fill="#22c55e" font-family="system-ui, sans-serif" font-size="9">+8.7% Volume Peak</text>
+
+    <!-- KPI 3 -->
+    <rect x="330" y="0" width="170" height="75" rx="8" fill="#131d38" stroke="rgba(99,102,241,0.25)" />
+    <text x="344" y="22" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">AVG MARGIN / PAIR</text>
+    <text x="344" y="48" fill="#ffffff" font-family="system-ui, sans-serif" font-size="19" font-weight="800">$44.80</text>
+    <text x="344" y="64" fill="#6366f1" font-family="system-ui, sans-serif" font-size="9">Footwear Category</text>
+
+    <!-- KPI 4 -->
+    <rect x="515" y="0" width="175" height="75" rx="8" fill="#131d38" stroke="rgba(255,255,255,0.08)" />
+    <text x="529" y="22" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">TOP REGION</text>
+    <text x="529" y="48" fill="#ffffff" font-family="system-ui, sans-serif" font-size="19" font-weight="800">North America</text>
+    <text x="529" y="64" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="9">$610M Operating Rev</text>
+  </g>
+
+  <!-- Regional Performance Table / Map Breakdown -->
+  <rect x="55" y="190" width="370" height="260" rx="8" fill="#131d38" stroke="rgba(255,255,255,0.06)" />
+  <text x="75" y="215" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Regional Performance Breakdown</text>
+
+  <!-- Regions -->
+  <g transform="translate(75, 235)">
+    <!-- North America -->
+    <text x="0" y="15" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11">North America</text>
+    <text x="180" y="15" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="600">$610M</text>
+    <rect x="0" y="24" width="330" height="8" rx="4" fill="#1e293b" />
+    <rect x="0" y="24" width="280" height="8" rx="4" fill="url(#neonOrange)" />
+
+    <!-- EMEA -->
+    <text x="0" y="55" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11">EMEA</text>
+    <text x="180" y="55" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="600">$420M</text>
+    <rect x="0" y="64" width="330" height="8" rx="4" fill="#1e293b" />
+    <rect x="0" y="64" width="210" height="8" rx="4" fill="url(#violetGlow)" />
+
+    <!-- Asia Pacific -->
+    <text x="0" y="95" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11">Greater China &amp; APAC</text>
+    <text x="180" y="95" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="600">$270M</text>
+    <rect x="0" y="104" width="330" height="8" rx="4" fill="#1e293b" />
+    <rect x="0" y="104" width="145" height="8" rx="4" fill="#38bdf8" />
+
+    <!-- Latin America -->
+    <text x="0" y="135" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11">Latin America</text>
+    <text x="180" y="135" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="600">$120M</text>
+    <rect x="0" y="144" width="330" height="8" rx="4" fill="#1e293b" />
+    <rect x="0" y="144" width="75" height="8" rx="4" fill="#eab308" />
+
+    <!-- Summary Footnote -->
+    <text x="0" y="185" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Operating margin calculated using dynamic DAX measures</text>
+  </g>
+
+  <!-- Monthly Sales Trend Chart -->
+  <rect x="440" y="190" width="305" height="260" rx="8" fill="#131d38" stroke="rgba(255,255,255,0.06)" />
+  <text x="460" y="215" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Monthly Operating Profit Trend</text>
+  
+  <path d="M 460 380 Q 500 350, 530 360 T 590 320 T 650 330 T 710 270" fill="none" stroke="#ff5722" stroke-width="3" />
+  <path d="M 460 380 Q 500 350, 530 360 T 590 320 T 650 330 T 710 270 L 710 420 L 460 420 Z" fill="url(#neonOrange)" opacity="0.12" />
+
+  <!-- Data Points -->
+  <circle cx="530" cy="360" r="4" fill="#ffffff" stroke="#ff5722" stroke-width="2" />
+  <circle cx="590" cy="320" r="4" fill="#ffffff" stroke="#ff5722" stroke-width="2" />
+  <circle cx="710" cy="270" r="5" fill="#ffffff" stroke="#ff5722" stroke-width="3" />
+  <text x="670" y="255" fill="#ff5722" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Peak Q4</text>
+</svg>

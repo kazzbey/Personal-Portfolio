@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080e1e" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Grid -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="50" x2="800" y2="50" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="250" x2="800" y2="250" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="350" x2="800" y2="350" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="0" y1="450" x2="800" y2="450" />
+  </g>
+
+  <!-- SaaS Window Frame -->
+  <rect x="40" y="30" width="720" height="440" rx="12" fill="#0f172a" stroke="rgba(255,255,255,0.1)" stroke-width="1" filter="drop-shadow(0 20px 40px rgba(0,0,0,0.6))" />
+  
+  <!-- Window Header -->
+  <rect x="40" y="30" width="720" height="42" rx="12" fill="#131d36" />
+  <circle cx="65" cy="51" r="5" fill="#ef4444" opacity="0.8" />
+  <circle cx="82" cy="51" r="5" fill="#eab308" opacity="0.8" />
+  <circle cx="99" cy="51" r="5" fill="#22c55e" opacity="0.8" />
+  <rect x="130" y="42" width="220" height="18" rx="6" fill="#1e293b" opacity="0.7" />
+  <text x="145" y="55" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">crm.saas-platform.io/dashboard</text>
+
+  <!-- Sidebar -->
+  <rect x="40" y="72" width="160" height="398" fill="#0b1329" />
+  <rect x="60" y="95" width="120" height="24" rx="6" fill="#7c3aed" opacity="0.2" stroke="#7c3aed" stroke-width="1" />
+  <text x="75" y="111" fill="#c084fc" font-family="system-ui, sans-serif" font-size="11" font-weight="600">⚡ Overview</text>
+  
+  <text x="75" y="148" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">📊 Analytics</text>
+  <text x="75" y="180" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">👥 Customers</text>
+  <text x="75" y="212" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">📦 Inventory</text>
+  <text x="75" y="244" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">💳 Invoices</text>
+  <text x="75" y="276" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">⚙️ Settings</text>
+
+  <!-- Content Dashboard -->
+  <!-- Stat Cards -->
+  <g transform="translate(220, 95)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="155" height="75" rx="8" fill="#131d38" stroke="rgba(255,255,255,0.06)" />
+    <text x="14" y="22" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">TOTAL REVENUE</text>
+    <text x="14" y="48" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="700">$128,450</text>
+    <text x="14" y="66" fill="#22c55e" font-family="system-ui, sans-serif" font-size="9">+18.4% from last mo</text>
+
+    <!-- Card 2 -->
+    <rect x="175" y="0" width="155" height="75" rx="8" fill="#131d38" stroke="rgba(255,255,255,0.06)" />
+    <text x="189" y="22" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">ACTIVE LEADS</text>
+    <text x="189" y="48" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="700">1,420</text>
+    <text x="189" y="66" fill="#6366f1" font-family="system-ui, sans-serif" font-size="9">+9.2% conversion</text>
+
+    <!-- Card 3 -->
+    <rect x="350" y="0" width="165" height="75" rx="8" fill="#131d38" stroke="rgba(255,255,255,0.06)" />
+    <text x="364" y="22" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">PIPELINE VALUE</text>
+    <text x="364" y="48" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="700">$485,200</text>
+    <text x="364" y="66" fill="#a855f7" font-family="system-ui, sans-serif" font-size="9">38 enterprise deals</text>
+  </g>
+
+  <!-- Big Chart -->
+  <rect x="220" y="190" width="330" height="150" rx="8" fill="#131d38" stroke="rgba(255,255,255,0.06)" />
+  <text x="236" y="214" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Enterprise Growth Velocity</text>
+  <path d="M 236 300 Q 280 280, 320 290 T 400 240 T 470 250 T 530 215" fill="none" stroke="url(#purpleGrad)" stroke-width="3" />
+  <path d="M 236 300 Q 280 280, 320 290 T 400 240 T 470 250 T 530 215 L 530 325 L 236 325 Z" fill="url(#purpleGrad)" opacity="0.15" />
+
+  <!-- Side Widget -->
+  <rect x="565" y="190" width="170" height="150" rx="8" fill="#131d38" stroke="rgba(255,255,255,0.06)" />
+  <text x="580" y="214" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Industry Share</text>
+  <circle cx="650" cy="275" r="40" fill="none" stroke="#1e293b" stroke-width="12" />
+  <circle cx="650" cy="275" r="40" fill="none" stroke="#7c3aed" stroke-width="12" stroke-dasharray="140 250" />
+  <circle cx="650" cy="275" r="40" fill="none" stroke="#38bdf8" stroke-width="12" stroke-dasharray="60 250" stroke-dashoffset="-140" />
+
+  <!-- Table Preview -->
+  <rect x="220" y="355" width="515" height="95" rx="8" fill="#131d38" stroke="rgba(255,255,255,0.06)" />
+  <text x="236" y="380" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Recent SaaS Transactions</text>
+  
+  <rect x="236" y="395" width="480" height="20" rx="4" fill="#0b1329" opacity="0.5" />
+  <text x="246" y="409" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="10">CloudCore Tech — Enterprise Tier</text>
+  <text x="650" y="409" fill="#22c55e" font-family="system-ui, sans-serif" font-size="10">+$14,200</text>
+
+  <rect x="236" y="420" width="480" height="20" rx="4" fill="#0b1329" opacity="0.3" />
+  <text x="246" y="434" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="10">Apex Logistics — Growth Plan</text>
+  <text x="650" y="434" fill="#22c55e" font-family="system-ui, sans-serif" font-size="10">+$5,800</text>
+</svg>

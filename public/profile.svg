@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="avatarGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#6366f1" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#030712" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fcd34d" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="200" cy="200" r="190" fill="url(#avatarGlow)" />
+  
+  <!-- Outer Tech Ring -->
+  <circle cx="200" cy="200" r="170" fill="none" stroke="#7c3aed" stroke-width="2" stroke-dasharray="12 8" opacity="0.5" />
+  <circle cx="200" cy="200" r="155" fill="#0b1220" stroke="rgba(255,255,255,0.1)" stroke-width="2" />
+
+  <!-- Stylized Geometric Developer Silhouette -->
+  <!-- Shoulders / Torso -->
+  <path d="M 100 340 C 110 265, 150 250, 200 250 C 250 250, 290 265, 300 340 Z" fill="url(#bodyGrad)" opacity="0.9" />
+  
+  <!-- Hoodie / Collar Accents -->
+  <path d="M 160 255 L 200 290 L 240 255 Z" fill="#1e1b4b" />
+  <path d="M 200 290 L 200 340" stroke="#c084fc" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Neck -->
+  <rect x="185" y="210" width="30" height="45" rx="6" fill="#f59e0b" opacity="0.9" />
+
+  <!-- Head -->
+  <ellipse cx="200" cy="170" rx="45" ry="55" fill="url(#faceGrad)" />
+  
+  <!-- Hair -->
+  <path d="M 152 160 C 150 115, 175 105, 200 105 C 228 105, 252 118, 248 160 C 242 125, 230 115, 200 118 C 170 115, 158 128, 152 160 Z" fill="#1e1b4b" />
+
+  <!-- Glasses / Modern Eyewear -->
+  <rect x="168" y="155" width="26" height="18" rx="5" fill="#0f172a" stroke="#a855f7" stroke-width="2" />
+  <rect x="206" y="155" width="26" height="18" rx="5" fill="#0f172a" stroke="#a855f7" stroke-width="2" />
+  <line x1="194" y1="164" x2="206" y2="164" stroke="#a855f7" stroke-width="2" />
+
+  <!-- Code Symbol Floating Badges -->
+  <g transform="translate(60, 110)">
+    <circle cx="20" cy="20" r="18" fill="#131d38" stroke="#7c3aed" stroke-width="1.5" />
+    <text x="12" y="25" fill="#c084fc" font-family="monospace" font-size="14" font-weight="700">&lt;/&gt;</text>
+  </g>
+
+  <g transform="translate(300, 120)">
+    <circle cx="20" cy="20" r="18" fill="#131d38" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="13" y="24" fill="#38bdf8" font-family="monospace" font-size="12" font-weight="700">BI</text>
+  </g>
+
+  <g transform="translate(290, 270)">
+    <circle cx="20" cy="20" r="18" fill="#131d38" stroke="#22c55e" stroke-width="1.5" />
+    <text x="13" y="25" fill="#22c55e" font-family="sans-serif" font-size="12" font-weight="700">JS</text>
+  </g>
+</svg>
