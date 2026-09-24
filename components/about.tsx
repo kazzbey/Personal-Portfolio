@@ -49,7 +49,7 @@ export function About() {
             <div className="space-y-4 text-slate-300 text-base leading-relaxed">
               <p>
                 I am a Computer Science student at <strong>Punjab University</strong>, currently
-                in my 4th semester with a <strong>3.36 CGPA</strong>. My primary focus is
+                in my 5th semester with a <strong>3.36 CGPA</strong>. My primary focus is
                 crafting responsive, accessible, and engaging web interfaces that deliver real-world
                 utility.
               </p>

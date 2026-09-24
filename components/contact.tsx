@@ -6,7 +6,6 @@ import { SectionHeading } from "./section-heading";
 import { SocialLinks } from "./social-links";
 import {
   Mail,
-  Phone,
   MapPin,
   Send,
   Loader2,
@@ -150,24 +149,6 @@ export function Contact() {
                       <Copy size={16} />
                     )}
                   </button>
-                </div>
-
-                {/* Phone Item */}
-                <div className="flex items-center gap-3 p-3.5 rounded-2xl bg-slate-950/60 border border-white/5">
-                  <div className="p-2 rounded-xl bg-indigo-950/50 text-indigo-400">
-                    <Phone size={18} />
-                  </div>
-                  <div>
-                    <span className="text-[11px] font-mono text-slate-500 uppercase">
-                      Phone / WhatsApp
-                    </span>
-                    <a
-                      href={portfolio.links.phone}
-                      className="block text-sm font-medium text-slate-200 hover:text-indigo-400 transition-colors"
-                    >
-                      {portfolio.person.phone}
-                    </a>
-                  </div>
                 </div>
 
                 {/* Location Item */}

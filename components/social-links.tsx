@@ -1,16 +1,14 @@
 import { portfolio } from "@/data/portfolio";
-import { Mail, Phone } from "lucide-react";
+import { AtSign, Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./icons";
 
 interface SocialLinksProps {
   className?: string;
-  showPhone?: boolean;
   size?: "sm" | "md" | "lg";
 }
 
 export function SocialLinks({
   className = "",
-  showPhone = false,
   size = "md",
 }: SocialLinksProps) {
   const sizeClasses = {
@@ -39,21 +37,18 @@ export function SocialLinks({
       hoverColor: "hover:text-indigo-400 hover:border-indigo-500/40 hover:bg-indigo-950/30",
     },
     {
+      name: "X",
+      href: portfolio.links.x,
+      icon: <AtSign size={iconSizes[size]} />,
+      hoverColor: "hover:text-sky-400 hover:border-sky-500/40 hover:bg-sky-950/30",
+    },
+    {
       name: "Email",
       href: portfolio.links.email,
       icon: <Mail size={iconSizes[size]} />,
       hoverColor: "hover:text-purple-400 hover:border-purple-500/40 hover:bg-purple-950/30",
     },
   ];
-
-  if (showPhone) {
-    links.push({
-      name: "Phone",
-      href: portfolio.links.phone,
-      icon: <Phone size={iconSizes[size]} />,
-      hoverColor: "hover:text-emerald-400 hover:border-emerald-500/40 hover:bg-emerald-950/30",
-    });
-  }
 
   return (
     <div className={`flex items-center gap-3 ${className}`}>

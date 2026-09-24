@@ -35,13 +35,13 @@ export function Hero() {
 
             {/* Headline */}
             <div className="space-y-2">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1]">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.1]">
                 Hi, I&apos;m{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-violet-300 to-indigo-400">
                   {portfolio.person.name}
                 </span>
               </h1>
-              <p className="text-xl sm:text-2xl font-semibold text-slate-300">
+              <p className="text-xl sm:text-2xl font-medium text-slate-300">
                 {portfolio.person.tagline}
               </p>
             </div>
@@ -87,7 +87,7 @@ export function Hero() {
               <span className="text-xs uppercase tracking-wider text-slate-500 font-semibold mr-1">
                 Connect:
               </span>
-              <SocialLinks showPhone={true} size="md" />
+              <SocialLinks size="md" />
             </div>
           </motion.div>
 
