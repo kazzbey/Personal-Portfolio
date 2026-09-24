@@ -13,7 +13,7 @@ export const portfolio = {
   },
   links: {
     github: "https://github.com/kazzbey",
-    linkedin: "https://www.linkedin.com/in/muhammadkhuzaimadev",
+    linkedin: "https://www.linkedin.com/in/kazzbey",
     x: "https://x.com/kazzbey07",
     instagram: "https://www.instagram.com/kazzbey/",
     email: "mailto:khuzaimam335@gmail.com",
