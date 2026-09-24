@@ -9,12 +9,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Muhammad Khuzaima | Frontend Developer",
+  title: "Muhammad Khuzaima | Full Stack Developer",
   description:
-    "Frontend Developer and BSCS student building responsive web experiences and practical data-driven solutions with modern technologies.",
+    "Full Stack Developer and BSCS student building responsive web experiences and practical data-driven solutions with modern technologies.",
   keywords: [
     "Muhammad Khuzaima",
-    "Frontend Developer",
+    "Full Stack Developer",
     "Web Developer",
     "Data Analytics",
     "Power BI",
@@ -34,23 +34,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://muhammadkhuzaima.dev",
     siteName: "Muhammad Khuzaima Portfolio",
-    title: "Muhammad Khuzaima | Frontend Developer",
+    title: "Muhammad Khuzaima | Full Stack Developer",
     description:
-      "Frontend Developer and BSCS student building responsive web experiences and practical data-driven solutions.",
+      "Full Stack Developer and BSCS student building responsive web experiences and practical data-driven solutions.",
     images: [
       {
         url: "/profile.png",
         width: 800,
         height: 800,
-        alt: "Muhammad Khuzaima — Frontend Developer",
+        alt: "Muhammad Khuzaima — Full Stack Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Muhammad Khuzaima | Frontend Developer",
+    title: "Muhammad Khuzaima | Full Stack Developer",
     description:
-      "Frontend Developer and BSCS student building responsive web experiences and practical data-driven solutions.",
+      "Full Stack Developer and BSCS student building responsive web experiences and practical data-driven solutions.",
     images: ["/profile.png"],
   },
   robots: {

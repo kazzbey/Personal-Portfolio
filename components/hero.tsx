@@ -105,13 +105,14 @@ export function Hero() {
             <div className="relative w-64 sm:w-80 h-64 sm:h-80 rounded-3xl p-1.5 bg-gradient-to-b from-purple-500/40 via-purple-900/20 to-indigo-600/30 shadow-2xl shadow-purple-950/40">
               <div className="relative w-full h-full rounded-[22px] overflow-hidden bg-slate-950 border border-white/10 flex items-center justify-center">
                 <Image
-                  src={portfolio.person.profileImage.endsWith(".png") ? "/profile.svg" : portfolio.person.profileImage}
+                  src={portfolio.person.profileImage}
                   alt={`Portrait of ${portfolio.person.name}`}
                   fill
                   priority
                   className="object-cover object-center transition-transform duration-500 hover:scale-105"
                   sizes="(max-width: 640px) 256px, 320px"
                 />
+                <div className="absolute inset-x-4 bottom-3 h-px bg-gradient-to-r from-transparent via-purple-400/90 to-transparent" />
               </div>
 
               {/* Floating Floating Code Card */}

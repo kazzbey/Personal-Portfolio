@@ -1,15 +1,15 @@
 export const portfolio = {
   person: {
     name: "Muhammad Khuzaima",
-    role: "Frontend Developer",
+    role: "Full Stack Developer",
     eyebrow: "Available for work",
-    tagline: "Frontend Developer building responsive digital experiences",
+    tagline: "Full Stack Developer building responsive digital experiences",
     bio: "I am a Computer Science student at Punjab University, currently in my 5th semester with a 3.36 CGPA. My primary focus is crafting responsive, accessible, and engaging web interfaces that deliver real-world utility.",
     location: "Lahore, Pakistan",
     email: "khuzaimam335@gmail.com",
     phone: "+92 332 4700225",
     cvPath: "/Muhammad-Khuzaima-CV.pdf",
-    profileImage: "/profile.svg",
+    profileImage: "/profile.png",
   },
   links: {
     github: "https://github.com/kazzbey",
