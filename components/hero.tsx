@@ -115,34 +115,6 @@ export function Hero() {
                 <div className="absolute inset-x-4 bottom-3 h-px bg-gradient-to-r from-transparent via-purple-400/90 to-transparent" />
               </div>
 
-              {/* Floating Floating Code Card */}
-              <div className="absolute -bottom-8 -left-4 sm:-left-8 bg-slate-950/90 border border-purple-500/30 backdrop-blur-md rounded-xl p-3 shadow-xl shadow-black/60 hidden sm:block max-w-[260px]">
-                <div className="flex items-center gap-1.5 pb-2 mb-2 border-b border-white/5 text-slate-400 text-[10px] font-mono">
-                  <Terminal size={12} className="text-purple-400" />
-                  <span>developer.ts</span>
-                  <div className="ml-auto flex gap-1">
-                    <span className="w-1.5 h-1.5 rounded-full bg-red-500/80" />
-                    <span className="w-1.5 h-1.5 rounded-full bg-yellow-500/80" />
-                    <span className="w-1.5 h-1.5 rounded-full bg-green-500/80" />
-                  </div>
-                </div>
-                <div className="font-mono text-[11px] text-slate-300 leading-tight space-y-1">
-                  <p>
-                    <span className="text-purple-400">const</span> developer = &#123;
-                  </p>
-                  <p className="pl-3">
-                    name: <span className="text-amber-300">&quot;Khuzaima&quot;</span>,
-                  </p>
-                  <p className="pl-3">
-                    role: <span className="text-emerald-400">&quot;Frontend Dev&quot;</span>,
-                  </p>
-                  <p className="pl-3">
-                    analytics: <span className="text-cyan-400">&quot;Power BI&quot;</span>,
-                  </p>
-                  <p>&#125;;</p>
-                </div>
-              </div>
-
               {/* Top Floating Badge */}
               <div className="absolute -top-3 -right-3 bg-gradient-to-r from-purple-900/90 to-indigo-900/90 border border-purple-400/40 backdrop-blur-md rounded-lg px-2.5 py-1 text-[11px] font-mono font-semibold text-purple-200 shadow-md">
                 BSCS @ PU
