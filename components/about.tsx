@@ -2,7 +2,7 @@
 
 import { portfolio } from "@/data/portfolio";
 import { SectionHeading } from "./section-heading";
-import { ArrowRight, GraduationCap, Code, BarChart, CheckCircle2 } from "lucide-react";
+import { ArrowRight, GraduationCap, Code, BarChart, CheckCircle2, ServerCog } from "lucide-react";
 import { motion } from "framer-motion";
 
 export function About() {
@@ -13,7 +13,12 @@ export function About() {
       desc: "Creating responsive, clean, and interactive websites using HTML, CSS, JavaScript, and Bootstrap.",
     },
     {
-      icon: <BarChart size={18} className="text-cyan-400" />,
+      icon: <ServerCog size={18} className="text-cyan-400" />,
+      title: "Backend Engineering",
+      desc: "Designing APIs, handling server-side logic, and building scalable backend workflows with Node.js and Express.",
+    },
+    {
+      icon: <BarChart size={18} className="text-amber-400" />,
       title: "Data Analytics & BI",
       desc: "Building insightful executive dashboards with Power BI, DAX formulas, SQL, and Excel.",
     },
@@ -54,9 +59,15 @@ export function About() {
                 utility.
               </p>
               <p>
-                Beyond frontend interfaces, I possess hands-on proficiency in Business
+                I also enjoy building backend systems that support modern web applications. From
+                designing clean API flows to handling server-side logic and data operations, I aim
+                to create dependable experiences that connect frontend design with robust
+                functionality.
+              </p>
+              <p>
+                Beyond product interfaces, I possess hands-on proficiency in Business
                 Intelligence and Data Analytics. By leveraging tools like <strong>Power BI</strong>,
-                <strong> SQL</strong>, and <strong>Microsoft Excel</strong>, I transform raw numbers
+                <strong> MySQL</strong>, and <strong>Microsoft Excel</strong>, I turn raw numbers
                 into actionable executive dashboards and data stories.
               </p>
               <p className="text-purple-300 font-medium">
@@ -66,7 +77,7 @@ export function About() {
             </div>
 
             {/* Core Strengths List */}
-            <div className="pt-2 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
               {coreStrengths.map((item) => (
                 <div
                   key={item.title}

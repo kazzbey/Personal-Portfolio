@@ -12,7 +12,7 @@ export const portfolio = {
     profileImage: "/profile.svg",
   },
   links: {
-    github: "https://github.com/MUHAMMAD-KHUZAIMA18",
+    github: "https://github.com/kazzbey",
     linkedin: "https://www.linkedin.com/in/muhammadkhuzaimadev",
     x: "https://x.com/kazzbey07",
     instagram: "https://www.instagram.com/kazzbey/",
@@ -45,19 +45,19 @@ export const portfolio = {
     },
     {
       title: "Backend",
-      items: ["Node.js", "Express", "REST API"],
+      items: ["Node.js", "Express"],
     },
     {
       title: "Database",
-      items: ["MySQL", "MongoDB", "Database Design"],
+      items: ["MySQL", "MongoDB"],
     },
     {
       title: "Deployment",
-      items: ["Vercel", "Cloudflare", "GitHub"],
+      items: ["Vercel", "Cloudflare"],
     },
     {
       title: "API Tools",
-      items: ["Postman API", "REST API"],
+      items: ["Postman", "REST API"],
     },
   ],
   skills: [
@@ -74,22 +74,22 @@ export const portfolio = {
     {
       title: "Backend",
       description: "Creating server-side logic and APIs that support modern web applications.",
-      skills: ["Node.js", "Express", "REST API"],
+      skills: ["Node.js", "Express"],
     },
     {
       title: "Database",
       description: "Structuring and managing data for robust application workflows and business insights.",
-      skills: ["MySQL", "MongoDB", "Database Design", "Database Management"],
+      skills: ["MySQL", "MongoDB", "Database Management"],
     },
     {
       title: "Deployment",
       description: "Shipping, hosting, and maintaining production-ready projects with modern deployment workflows.",
-      skills: ["Vercel", "Cloudflare", "Git", "GitHub", "CI/CD"],
+      skills: ["Vercel", "Cloudflare", "Git", "CI/CD"],
     },
     {
       title: "API Tools",
       description: "Testing and validating API integrations across development and production workflows.",
-      skills: ["Postman API", "REST API", "API Testing", "Documentation"],
+      skills: ["Postman", "REST API", "API Testing", "Documentation"],
     },
   ],
   certifications: [
