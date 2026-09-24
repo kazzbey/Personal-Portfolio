@@ -109,7 +109,7 @@ export function Hero() {
                   alt={`Portrait of ${portfolio.person.name}`}
                   fill
                   priority
-                  className="object-cover object-center transition-transform duration-500 hover:scale-105"
+                  className="object-cover object-center"
                   sizes="(max-width: 640px) 256px, 320px"
                 />
                 <div className="absolute inset-x-4 bottom-3 h-px bg-gradient-to-r from-transparent via-purple-400/90 to-transparent" />
