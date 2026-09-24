@@ -9,24 +9,31 @@ import {
   Terminal,
   Wrench,
   Check,
+  Cloud,
+  Route,
+  ServerCog,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
 export function Skills() {
   const getCategoryIcon = (title: string) => {
     switch (title.toLowerCase()) {
+      case "languages":
+        return <Terminal className="text-emerald-400" size={22} />;
       case "frontend":
         return <Layout className="text-purple-400" size={22} />;
+      case "backend":
+        return <ServerCog className="text-cyan-400" size={22} />;
+      case "database":
+        return <Database className="text-amber-400" size={22} />;
+      case "deployment":
+        return <Cloud className="text-indigo-400" size={22} />;
+      case "api tools":
+        return <Route className="text-pink-400" size={22} />;
       case "data analytics":
         return <LineChart className="text-amber-400" size={22} />;
-      case "databases":
-        return <Database className="text-cyan-400" size={22} />;
-      case "programming":
-        return <Terminal className="text-emerald-400" size={22} />;
-      case "tools & workflow":
-        return <Wrench className="text-indigo-400" size={22} />;
       default:
-        return <Layout className="text-purple-400" size={22} />;
+        return <Wrench className="text-indigo-400" size={22} />;
     }
   };
 

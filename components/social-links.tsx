@@ -1,6 +1,6 @@
 import { portfolio } from "@/data/portfolio";
-import { AtSign, Mail } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "./icons";
+import { Mail } from "lucide-react";
+import { GithubIcon, InstagramIcon, LinkedinIcon, XIcon } from "./icons";
 
 interface SocialLinksProps {
   className?: string;
@@ -39,8 +39,14 @@ export function SocialLinks({
     {
       name: "X",
       href: portfolio.links.x,
-      icon: <AtSign size={iconSizes[size]} />,
+      icon: <XIcon size={iconSizes[size]} />,
       hoverColor: "hover:text-sky-400 hover:border-sky-500/40 hover:bg-sky-950/30",
+    },
+    {
+      name: "Instagram",
+      href: portfolio.links.instagram,
+      icon: <InstagramIcon size={iconSizes[size]} />,
+      hoverColor: "hover:text-pink-400 hover:border-pink-500/40 hover:bg-pink-950/30",
     },
     {
       name: "Email",

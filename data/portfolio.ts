@@ -14,9 +14,10 @@ export const portfolio = {
   links: {
     github: "https://github.com/MUHAMMAD-KHUZAIMA18",
     linkedin: "https://www.linkedin.com/in/muhammadkhuzaimadev",
+    x: "https://x.com/kazzbey07",
+    instagram: "https://www.instagram.com/kazzbey/",
     email: "mailto:khuzaimam335@gmail.com",
     phone: "tel:+923324700225",
-    x: "https://x.com/kazzbey07",
   },
   navigation: [
     { name: "Home", href: "#home" },
@@ -33,43 +34,62 @@ export const portfolio = {
     { value: "10+", label: "Projects", description: "Built & improved" },
     { value: "2+", label: "Years", description: "Learning & building" },
   ],
-  technologiesStrip: [
-    { name: "HTML" },
-    { name: "CSS" },
-    { name: "JavaScript" },
-    { name: "Bootstrap" },
-    { name: "Power BI" },
-    { name: "Excel" },
-    { name: "SQL" },
-    { name: "Git" },
-    { name: "GitHub" },
-    { name: "Vercel" },
+  techArsenal: [
+    {
+      title: "Languages",
+      items: ["C", "C++", "Assembly Language", "JavaScript", "TypeScript"],
+    },
+    {
+      title: "Frontend",
+      items: ["HTML", "CSS", "Bootstrap", "Next.js", "React", "Tailwind CSS"],
+    },
+    {
+      title: "Backend",
+      items: ["Node.js", "Express", "REST API"],
+    },
+    {
+      title: "Database",
+      items: ["MySQL", "MongoDB", "Database Design"],
+    },
+    {
+      title: "Deployment",
+      items: ["Vercel", "Cloudflare", "GitHub"],
+    },
+    {
+      title: "API Tools",
+      items: ["Postman API", "REST API"],
+    },
   ],
   skills: [
     {
+      title: "Languages",
+      description: "Core programming languages and low-level fundamentals I use to build and reason about software.",
+      skills: ["C", "C++", "Assembly Language", "JavaScript", "TypeScript"],
+    },
+    {
       title: "Frontend",
-      description: "Building responsive and polished user interfaces with modern web technologies.",
-      skills: ["HTML", "CSS", "JavaScript", "Bootstrap", "React", "Next.js", "Tailwind CSS"],
+      description: "Building responsive, polished, and accessible interfaces with modern frontend tooling.",
+      skills: ["HTML", "CSS", "Bootstrap", "Next.js", "React", "Tailwind CSS"],
     },
     {
-      title: "Data Analytics",
-      description: "Transforming raw data into clear business insights and executive-ready dashboards.",
-      skills: ["Power BI", "Excel", "SQL", "DAX", "Dashboard Design", "Data Visualization"],
+      title: "Backend",
+      description: "Creating server-side logic and APIs that support modern web applications.",
+      skills: ["Node.js", "Express", "REST API"],
     },
     {
-      title: "Databases",
-      description: "Structuring data for practical applications and analytical workflows.",
-      skills: ["MySQL", "PostgreSQL", "MongoDB", "Database Design", "Data Modeling"],
+      title: "Database",
+      description: "Structuring and managing data for robust application workflows and business insights.",
+      skills: ["MySQL", "MongoDB", "Database Design", "Database Management"],
     },
     {
-      title: "Programming",
-      description: "Applying core coding principles to build reliable and maintainable software.",
-      skills: ["C++", "JavaScript", "TypeScript", "OOP", "Data Structures", "Algorithms"],
+      title: "Deployment",
+      description: "Shipping, hosting, and maintaining production-ready projects with modern deployment workflows.",
+      skills: ["Vercel", "Cloudflare", "Git", "GitHub", "CI/CD"],
     },
     {
-      title: "Tools & Workflow",
-      description: "Working with the tools required to ship clean, collaborative, production-ready work.",
-      skills: ["Git", "GitHub", "Vercel", "Figma", "Postman", "VS Code"],
+      title: "API Tools",
+      description: "Testing and validating API integrations across development and production workflows.",
+      skills: ["Postman API", "REST API", "API Testing", "Documentation"],
     },
   ],
   certifications: [

@@ -1,69 +1,71 @@
 import { portfolio } from "@/data/portfolio";
-import {
-  Code2,
-  FileCode,
-  Layers,
-  BarChart3,
-  Sheet,
-  Database,
-  GitBranch,
-  Cloud,
-  Globe,
-} from "lucide-react";
-import { GithubIcon } from "./icons";
+
+const categoryStyles: Record<string, { badge: string; chip: string }> = {
+  Languages: {
+    badge: "bg-cyan-950/60 text-cyan-300 border border-cyan-800/40",
+    chip: "bg-cyan-950/40 text-cyan-200 border border-cyan-800/30",
+  },
+  Frontend: {
+    badge: "bg-violet-950/60 text-violet-300 border border-violet-800/40",
+    chip: "bg-violet-950/40 text-violet-200 border border-violet-800/30",
+  },
+  Backend: {
+    badge: "bg-emerald-950/60 text-emerald-300 border border-emerald-800/40",
+    chip: "bg-emerald-950/40 text-emerald-200 border border-emerald-800/30",
+  },
+  Database: {
+    badge: "bg-amber-950/60 text-amber-300 border border-amber-800/40",
+    chip: "bg-amber-950/40 text-amber-200 border border-amber-800/30",
+  },
+  Deployment: {
+    badge: "bg-indigo-950/60 text-indigo-300 border border-indigo-800/40",
+    chip: "bg-indigo-950/40 text-indigo-200 border border-indigo-800/30",
+  },
+  "API Tools": {
+    badge: "bg-pink-950/60 text-pink-300 border border-pink-800/40",
+    chip: "bg-pink-950/40 text-pink-200 border border-pink-800/30",
+  },
+};
 
 export function TechStrip() {
-  const getIcon = (name: string) => {
-    switch (name.toLowerCase()) {
-      case "html":
-        return <FileCode className="text-orange-400" size={18} />;
-      case "css":
-        return <Code2 className="text-blue-400" size={18} />;
-      case "javascript":
-        return <Layers className="text-yellow-400" size={18} />;
-      case "bootstrap":
-        return <Globe className="text-purple-400" size={18} />;
-      case "power bi":
-        return <BarChart3 className="text-amber-400" size={18} />;
-      case "excel":
-        return <Sheet className="text-emerald-400" size={18} />;
-      case "sql":
-        return <Database className="text-cyan-400" size={18} />;
-      case "git":
-        return <GitBranch className="text-red-400" size={18} />;
-      case "github":
-        return <GithubIcon className="text-slate-200" size={18} />;
-      case "vercel":
-        return <Cloud className="text-indigo-400" size={18} />;
-      default:
-        return <Code2 className="text-purple-400" size={18} />;
-    }
-  };
-
   return (
     <section
-      aria-label="Technologies Overview"
-      className="py-10 border-y border-white/5 bg-slate-950/40 relative overflow-hidden"
+      aria-label="Technical Arsenal"
+      className="py-12 border-y border-white/5 bg-slate-950/40 relative overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="text-center text-xs font-semibold tracking-widest text-slate-500 uppercase mb-6">
-          Technologies I Work With
+        <p className="text-center text-xs font-semibold tracking-[0.28em] text-slate-500 uppercase mb-8">
+          Technical Arsenal
         </p>
 
-        <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
-          {portfolio.technologiesStrip.map((tech) => (
-            <div
-              key={tech.name}
-              className="flex items-center gap-2.5 px-4 py-2 rounded-xl bg-slate-900/60 border border-white/5 hover:border-purple-500/30 hover:bg-slate-900/90 transition-all duration-200 hover:-translate-y-0.5 group"
-            >
-              <span className="transition-transform group-hover:scale-110">
-                {getIcon(tech.name)}
-              </span>
-              <span className="text-xs sm:text-sm font-medium text-slate-300 group-hover:text-white">
-                {tech.name}
-              </span>
-            </div>
-          ))}
+        <div className="space-y-8">
+          {portfolio.techArsenal.map((group) => {
+            const styles = categoryStyles[group.title] ?? {
+              badge: "bg-slate-900/80 text-slate-300 border border-white/10",
+              chip: "bg-slate-900/70 text-slate-200 border border-white/10",
+            };
+
+            return (
+              <div key={group.title} className="space-y-3">
+                <div className="flex justify-center">
+                  <span className={`inline-flex items-center rounded-full px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] ${styles.badge}`}>
+                    {group.title}
+                  </span>
+                </div>
+
+                <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
+                  {group.items.map((item) => (
+                    <span
+                      key={item}
+                      className={`inline-flex items-center rounded-xl px-3 py-2 text-xs sm:text-sm font-medium ${styles.chip}`}
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
